@@ -11,10 +11,12 @@
 
   &__title {
     color: var.$primary-very-dark;
-    font-weight: type.$display-weight;
+    // font-weight: type.$display-weight;
     font-size: type.$display-title-size;
     letter-spacing: type.$display-spacing;
     text-align: center;
+    font-variation-settings: type.$display-opsz, type.$display-wght,
+      type.$display-SOFT, type.$display-WONK;
   }
 
   &__img {
@@ -25,13 +27,17 @@
     max-width: 55ch;
     margin-bottom: 1rem;
     font-size: type.$body-font-size;
-    font-weight: type.$body-font-weight;
+    // font-weight: type.$body-font-weight;
     padding: 0rem 5vw;
+    font-variation-settings: type.$body-font-opsz, type.$body-font-wght,
+      type.$body-font-SOFT, type.$body-font-WONK;
 
     &--first {
       font-style: italic;
-      font-weight: type.$body-italic-weight;
+      // font-weight: type.$body-italic-weight;
       letter-spacing: 0.15em;
+      font-variation-settings: type.$body-italic-opsz, type.$body-italic-wght,
+        type.$body-italic-SOFT, type.$body-italic-WONK;
     }
   }
 }

@@ -1,16 +1,47 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../fonts/Fraunces[SOFT,WONK,opsz,wght].ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf")
+    format("truetype");
+}
 
 $font: "Fraunces", serif;
 
 // body font styling vars
 $body-font-size: 120%;
-$body-font-weight: 350;
-$body-italic-weight: 100;
+// $body-font-weight: 350;
+// $body-italic-weight: 100;
+
+// Body normal font: variable font variables
+$body-font-opsz: "opsz" 76;
+$body-font-wght: "wght" 427;
+$body-font-SOFT: "SOFT" 66.5;
+$body-font-WONK: "WONK" 0;
+
+// Body italic font: variable font variables
+$body-italic-opsz: "opsz" 73;
+$body-italic-wght: "wght" 200;
+$body-italic-SOFT: "SOFT" 81.8;
+$body-italic-WONK: "WONK" 1;
 
 // display font styling vars
 $display-font: $font;
-$display-weight: 900;
+// $display-weight: 900;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;
+
+// Display font: variable font variables
+$display-opsz: "opsz" 48;
+$display-wght: "wght" 520;
+$display-SOFT: "SOFT" 25;
+$display-WONK: "WONK" 0;
